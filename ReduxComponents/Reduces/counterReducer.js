@@ -3,7 +3,7 @@ const initialState = 0;
 export default function counterReducer(state=initialState, action){
     switch (action.type) {
         case Increase: return state + action.value
-        case Decrease: return state - action.value
+        case Decrease: return state - 1
         case Reset:   return initialState
         default :return state
     }
